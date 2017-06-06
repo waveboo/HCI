@@ -1,0 +1,19 @@
+mongo:
+  host: localhost
+  db: qa
+  port: 27017
+
+
+types:
+  map:
+    slots: [location]
+    statement: ["{location}在哪里", "我想去{location}", "{location}怎么走"]
+  reason:
+    slots: [phenomenon]
+    statement:  ["为什么说{phenomenon}", "为什么要{phenomenon}", "为什么有{phenomenon}", "为什么{phenomenon}"]
+  information:
+    slots: [info]
+    statement: ["{info}是什么",  "{info}指的是","{info}是谁"]
+
+
+
