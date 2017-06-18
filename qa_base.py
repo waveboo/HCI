@@ -50,11 +50,17 @@ class QA(object):
         self.slots = slots
         self.answer = answer
 
-# if __name__ == '__main__':
-#     qas = [
-#
-#     ]
-#     for qa in qas:
-#        Base().save(qa)
+if __name__ == '__main__':
+     qas = [
+        QA('information', {'info': '郭子仪'}, '郭子仪（697——781），祖籍山西汾阳，华州郑县（今陕西华县）人。'),
+        QA('information', {'info': '明妃曲'}, '《明妃曲二首》是宋代文学家王安石的组诗作品，被称为是咏王昭君最好的诗。'),
+        QA('information', {'info': '李宏毅'}, '李宏毅，1998年6月26日出生于辽阳市，《变形计》第九季城市主人公。'),
+        QA('information', {'info': '苏辙'},
+           '苏辙（1039年3月18日—1112年10月25日），字子由，一字同叔，晚号颍滨遗老，汉族，眉州眉山（今属四川）人，北宋文学家、诗人、宰相，唐宋八大家之一。'),
+        QA('information', {'info': '西天目山'}, '西天目山是国家级森林和野生动物类型的自然保护区，位于杭州临安31公里处，是大自然赐予天然尤物。'),
+        QA('information', {'info': '鼓子词'}, '鼓子词是中国宋代的说唱伎艺。')
+     ]
+     for qa in qas:
+        Base().save(qa)
 
 
