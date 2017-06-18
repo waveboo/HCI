@@ -28,9 +28,7 @@ class Model(object):
     """
     def sentence_vector(self, sentence):
         a = list(jieba.cut(sentence))
-        print a
         words_vec = np.array(map(lambda x: self.model[x], a))
-        print words_vec
         num = words_vec.shape[0]
         sentence_vec = np.sum(words_vec, axis=0) / num
         return sentence_vec

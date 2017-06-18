@@ -38,7 +38,7 @@ class Robot(object):
 
 if __name__ == '__main__':
     robot = Robot()
-    question = '郭伟华是什么人'
+    question = '苏门四学士指的是'
     print '{answer}'.format(answer=robot.listen(question))
 
 

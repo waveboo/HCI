@@ -36,6 +36,7 @@ def ask():
     question = request.form['question']
     print question
     answer = robot.listen(question)
+    print answer
     # resp = {
     #     'instructions': {
     #         'say': answer
